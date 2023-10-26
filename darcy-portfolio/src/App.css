@@ -1,0 +1,161 @@
+
+/* nav bar */
+.nav {
+    /* background-color: #feff9e; */
+    background-color: #e6e6e6;
+    padding: 20px 0 5px 0;
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.darcy-link h1 {
+    padding: 0;
+    margin: 0 20px;
+    font-size: 2.2rem;
+}
+.darcy-link h1:hover {
+    text-decoration: underline;
+    transition: 5s;
+}
+.darcy-link {
+    text-decoration: none;
+    color: #162802;
+}
+.links {
+    margin-right: 20px;
+}
+.link {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #162802;
+}
+.link:hover {
+    font-weight: 700;
+}
+
+
+/* home page */
+.home-outer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #e6e6e6; */
+    z-index: -2;
+}
+.home-img img {
+    width: 100%;
+}
+.home-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 40%;
+    height: 100vh;
+    /* background-color: #b9d393; */
+    background-color: #cddbb6;
+}
+.home-text::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    height: 100%;
+    width: 5px;
+    background-color: #cddbb6;
+
+}
+.home-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+.curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: 2;
+}
+.curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 110px;
+}
+.curve .shape-fill {
+    fill: #E6E6E6;
+}
+
+
+/* about page */
+.about-outer {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: ; */
+    background: repeating-linear-gradient(-45deg, #f6f6f6, #f6f6f6 5px, #e6e6e6 5px, #e6e6e6 10px);
+}
+.main-about-focus {
+    position: relative;
+    margin-top: 20px;
+    left: 10%;
+    padding: 20px;
+    height: 600px;
+    width: 468px;
+    color: #cddbb6;
+    background-color: #162802;
+    border-bottom: 100vh solid #162802;
+    border-radius: 50px 50px 0 0;
+    box-shadow: -30px 20px #b3c0a0;
+}
+.main-about-focus::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(350px, 432px);
+    width: 100%;
+    height: 100px;
+    background-color: #a0c7fe;
+    border-right: 100vb solid #a0c7fe;
+    border-radius: 50px 0 0 50px;
+}
+.main-about-focus::after {
+    content: url('./assets/darcy-standing2-no-bg.png');
+    position: absolute;
+    top: 0;
+    left: 218px;
+    transform: scale(.2);
+    width: 10px;
+    height: 10px;
+}
+.main-about-text {
+    margin-top: 15%;
+}
+
+/* projects page */
+.projects-outer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: url('./assets/background-squiggle.png');
+    background-size: cover;
+    background-position: top 115px left 0;
+}
+.projects-focus {
+    margin: 10px auto;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 30px;
+    /* background-color: #f6f6f6c6; */
+}
+.projects-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}

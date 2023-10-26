@@ -1,0 +1,28 @@
+* {
+    /* box-sizing: border-box; */
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #162802;
+    /* background-color: #e7e8ec; */
+    background-color: #f6f6f6;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-style: italic;
+}
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    overflow: hidden;
+}
