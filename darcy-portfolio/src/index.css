@@ -2,6 +2,22 @@
     /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;
 }
+:root {
+    /* fonts */
+    --main-font: 'Poppins', sans-serif;
+    --accent-font: 'Lora', serif;
+    /* color palette */
+    --off-white: #f6f6f6;
+    --darker-white: #E6E6E6;
+    --font-green: #cddbb6;
+    --dark-green: #162802; 
+    --pale-green: #b3c0a0;
+    --sec-color: #a0c7fe;
+
+    /* --dark-green: #233349;
+    --pale-green: #9eafb6; */
+    /* --sec-color: #c4772a; */
+}
 body {
     margin: 0;
     padding: 0;
@@ -24,5 +40,12 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+/* animations */
+@keyframes parallax {
+    to {
+        transform: translateY(calc(var(--parallax-speed) * 10px));
+    }
 }

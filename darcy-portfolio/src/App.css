@@ -1,10 +1,8 @@
 
 /* nav bar */
 .nav {
-    /* background-color: #feff9e; */
-    background-color: #e6e6e6;
+    border-bottom: 5px solid var(--darker-white);
     padding: 20px 0 5px 0;
-    /* margin-top: 20px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,107 +33,112 @@
 }
 
 
-/* home page */
-.home-outer {
+/* top fold */
+.top-bg {
+    background-color: #394b45;
+    height: 75vh;
+}
+.parallax {
     position: relative;
-    width: 100vw;
-    height: 100vh;
-    /* background-color: #e6e6e6; */
-    z-index: -2;
+    min-height: 75vh;
+    display: grid;
+    grid-template-areas: "stack";
+    z-index: 0;
 }
-.home-img img {
-    width: 100%;
+.parallax > * {
+    grid-area: stack;
+    height: 70vh;
+    animation: parallax linear;
+    animation-timeline: scroll();
 }
-.home-text {
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    width: 40%;
-    height: 100vh;
-    /* background-color: #b9d393; */
-    background-color: #cddbb6;
+.parallax > img {
+    margin-left: 50%;
 }
-.home-text::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -50px;
-    height: 100%;
-    width: 5px;
-    background-color: #cddbb6;
+.hero {
+    margin-left: 20px;
+    z-index: 10;
+    --parallax-speed: 2;
 
 }
-.home-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0;
+
+.parallax-bg {
+    content: url('./assets/background.png');
+    height: 69vh;
+    --parallax-speed: -2;
 }
-.curve {
+.parallax-girl {
+    content: url('./assets/girl.png');
+    --parallax-speed: -4;
+}
+.parallax-table {
+    content: url('./assets/table.png');
+    --parallax-speed: 2;
+}
+.parallax-window {
+    content: url('./assets/window.png');
+    --parallax-speed: 4;
+}
+
+
+
+.top-outer {
+    position: relative;
+    width: 100vw;
+    height: 550px;
+}
+.top-focus {
+    position: relative;
+    margin-top: 20px;
+    /* left: 10%; */
+    padding: 20px 20px 20px 100px;
+    height: 505px;
+    width: 468px;
+    /* width: 60%; */
+    color: var(--font-green);
+    background-color: var(--dark-green);
+    /* border-radius: 50px 50px 0 0; */
+    /* box-shadow: -30px 20px var(--pale-green); */
+}
+.top-focus::after {
+    content: url('./assets/darcy-standing2-no-bg.png');
     position: absolute;
     top: 0;
+    left: 298px;
+    /* left: 65%; */
+    transform: scale(.2);
+    width: 10px;
+    height: 10px;
+    z-index: 99;
+}
+.top-curve {
+    position: absolute;
+    bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    z-index: 2;
 }
-.curve svg {
+.top-curve svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 110px;
+    width: calc(122% + 1.3px);
+    height: 128px;
+    transform: rotateY(180deg);
 }
-.curve .shape-fill {
-    fill: #E6E6E6;
+.top-curve .shape-fill {
+    fill: var(--pale-green);
 }
-
+.top-text {
+    margin-top: 15%;
+}
 
 /* about page */
 .about-outer {
-    width: 100vw;
-    height: 100vh;
-    /* background-color: ; */
-    background: repeating-linear-gradient(-45deg, #f6f6f6, #f6f6f6 5px, #e6e6e6 5px, #e6e6e6 10px);
-}
-.main-about-focus {
-    position: relative;
-    margin-top: 20px;
-    left: 10%;
-    padding: 20px;
-    height: 600px;
-    width: 468px;
-    color: #cddbb6;
-    background-color: #162802;
-    border-bottom: 100vh solid #162802;
-    border-radius: 50px 50px 0 0;
-    box-shadow: -30px 20px #b3c0a0;
-}
-.main-about-focus::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(350px, 432px);
-    width: 100%;
-    height: 100px;
-    background-color: #a0c7fe;
-    border-right: 100vb solid #a0c7fe;
-    border-radius: 50px 0 0 50px;
-}
-.main-about-focus::after {
-    content: url('./assets/darcy-standing2-no-bg.png');
-    position: absolute;
-    top: 0;
-    left: 218px;
-    transform: scale(.2);
-    width: 10px;
-    height: 10px;
-}
-.main-about-text {
-    margin-top: 15%;
+    padding: 100px;
+    /* border: 2px solid orange; */
+    border: 2px solid var(--pale-green);
+    background-color: var(--pale-green);
+    /* z-index: 0; */
 }
 
 /* projects page */

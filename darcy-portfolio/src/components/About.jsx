@@ -1,14 +1,17 @@
 export default function About () {
     return (
         <div className="about-outer">
-            <div className="main-about-focus">
-                <div className="main-about-text">
-                    <h1>Hi there!</h1>
-                    <p>I'm Darcy, a software engineer from the Atlanta suburbs. <br />Here's some cool stuff about what I like about this stuff that I do. <br />You can either find me behind a computer or out in the woods. <br />Let's get in touch. </p>
+            <div className="about-focus">
+                <div className="about-text-1">
+                    <h2>Something</h2>
                 </div>
-                <div className="main-about-button">
-                    <button>More About Me</button>
+                <div className="about-text-2">
+                    <h2>Something</h2>
                 </div>
+                <div className="about-text-3">
+                    <h2>Something</h2>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio soluta quos rerum, nam minus a qui! Unde at magnam eveniet voluptates reiciendis ullam, similique pariatur voluptate voluptas quod architecto qui? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero deleniti optio consectetur veritatis beatae qui, vel ab voluptatem ad. Cum, nam doloremque autem laborum asperiores ipsa fuga incidunt pariatur cupiditate! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, modi recusandae! Officiis tempore distinctio possimus? Repellat, aliquam molestias laboriosam autem consequatur deleniti exercitationem corporis minima eligendi ad dignissimos reiciendis illo.</p>
             </div>
         </div>
     )
