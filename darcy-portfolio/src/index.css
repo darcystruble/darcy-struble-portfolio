@@ -7,12 +7,21 @@
     --main-font: 'Poppins', sans-serif;
     --accent-font: 'Lora', serif;
     /* color palette */
-    --off-white: #f6f6f6;
-    --darker-white: #E6E6E6;
-    --font-green: #cddbb6;
-    --dark-green: #162802; 
-    --pale-green: #b3c0a0;
-    --sec-color: #a0c7fe;
+    /* dark colors */
+    --darkest-green: #232d2a;
+    --dark-green: #394b45;
+    --dark-grey: #393939;
+    --dark-red: #3d1513;
+    --dark-orange: #893f04;
+    /* mid colors */
+    --mid-green: #7e8d85;
+    --mid-pink: #a0695c;
+    --mid-grey: #74655d;
+    --mid-tan: #c09e87;
+    
+    /* light colors */
+    --off-white: #eadccc;
+    --pale-pink: #edded2; 
 
     /* --dark-green: #233349;
     --pale-green: #9eafb6; */
@@ -21,9 +30,10 @@
 body {
     margin: 0;
     padding: 0;
-    color: #162802;
+    color: var(--darkest-green);
     /* background-color: #e7e8ec; */
-    background-color: #f6f6f6;
+    /* background-color: var(--mid-green); */
+    background-color: var(--dark-green);
 }
 html {
     margin: 0;

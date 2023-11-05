@@ -1,11 +1,13 @@
 
 /* nav bar */
 .nav {
-    border-bottom: 5px solid var(--darker-white);
+    border-bottom: 3px solid var(--mid-green);
     padding: 20px 0 5px 0;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: var(--dark-green);
 }
 .darcy-link h1 {
     padding: 0;
@@ -18,7 +20,7 @@
 }
 .darcy-link {
     text-decoration: none;
-    color: #162802;
+    color: var(--off-white);
 }
 .links {
     margin-right: 20px;
@@ -26,7 +28,7 @@
 .link {
     margin: 0 10px;
     text-decoration: none;
-    color: #162802;
+    color: var(--off-white);
 }
 .link:hover {
     font-weight: 700;
@@ -35,32 +37,34 @@
 
 /* top fold */
 .top-bg {
-    background-color: #394b45;
     height: 75vh;
 }
 .parallax {
+    overflow: hidden;
     position: relative;
     min-height: 75vh;
     display: grid;
     grid-template-areas: "stack";
     z-index: 0;
+    background-color: #394b45;
 }
 .parallax > * {
     grid-area: stack;
     height: 70vh;
     animation: parallax linear;
-    animation-timeline: scroll();
+    animation-timeline: scroll(root block);
 }
 .parallax > img {
-    margin-left: 50%;
+    margin-left: 40%;
 }
 .hero {
-    margin-left: 20px;
+    margin-left: 30px;
+    /* text-align: right; */
     z-index: 10;
+    width: 37%;
+    color: var(--off-white);
     --parallax-speed: 2;
-
 }
-
 .parallax-bg {
     content: url('./assets/background.png');
     height: 69vh;
@@ -72,73 +76,37 @@
 }
 .parallax-table {
     content: url('./assets/table.png');
-    --parallax-speed: 2;
+    --parallax-speed: 1.2;
 }
 .parallax-window {
     content: url('./assets/window.png');
-    --parallax-speed: 4;
 }
 
-
-
-.top-outer {
+/* about page */
+.about-outer {
     position: relative;
-    width: 100vw;
-    height: 550px;
+    padding: 100px;
+    background-color: var(--mid-green);
 }
-.top-focus {
-    position: relative;
-    margin-top: 20px;
-    /* left: 10%; */
-    padding: 20px 20px 20px 100px;
-    height: 505px;
-    width: 468px;
-    /* width: 60%; */
-    color: var(--font-green);
-    background-color: var(--dark-green);
-    /* border-radius: 50px 50px 0 0; */
-    /* box-shadow: -30px 20px var(--pale-green); */
-}
-.top-focus::after {
-    content: url('./assets/darcy-standing2-no-bg.png');
+
+.about-curve {
     position: absolute;
     top: 0;
-    left: 298px;
-    /* left: 65%; */
-    transform: scale(.2);
-    width: 10px;
-    height: 10px;
-    z-index: 99;
-}
-.top-curve {
-    position: absolute;
-    bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
-.top-curve svg {
+
+.about-curve svg {
     position: relative;
     display: block;
-    width: calc(122% + 1.3px);
-    height: 128px;
-    transform: rotateY(180deg);
-}
-.top-curve .shape-fill {
-    fill: var(--pale-green);
-}
-.top-text {
-    margin-top: 15%;
+    width: calc(109% + 1.3px);
+    height: 136px;
 }
 
-/* about page */
-.about-outer {
-    padding: 100px;
-    /* border: 2px solid orange; */
-    border: 2px solid var(--pale-green);
-    background-color: var(--pale-green);
-    /* z-index: 0; */
+.about-curve .shape-fill {
+    fill: var(--dark-green);
 }
 
 /* projects page */
@@ -156,7 +124,6 @@
     width: fit-content;
     height: fit-content;
     border-radius: 30px;
-    /* background-color: #f6f6f6c6; */
 }
 .projects-text h1 {
     font-size: 2.5rem;
