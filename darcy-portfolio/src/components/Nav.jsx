@@ -4,7 +4,7 @@ export default function Nav () {
     return (
         <div className="nav">
             <div className="darcy">
-                <Link to='/home' className='darcy-link'><h1>Darcy Struble</h1></Link>
+                <Link to='/' className='darcy-link'><h1>Darcy Struble</h1></Link>
             </div>
             <div className="links">
                 <Link to='/about' className='link'>// About</Link>

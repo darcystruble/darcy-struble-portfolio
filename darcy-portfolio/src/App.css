@@ -70,6 +70,10 @@
     height: 69vh;
     --parallax-speed: -2;
 }
+.parallax-code {
+    content: url('./assets/floating-code.png');
+    --parallax-speed: -3
+}
 .parallax-girl {
     content: url('./assets/girl.png');
     --parallax-speed: -4;
@@ -85,10 +89,9 @@
 /* about page */
 .about-outer {
     position: relative;
-    padding: 100px;
+    padding: 150px 100px 100px 100px;
     background-color: var(--mid-green);
 }
-
 .about-curve {
     position: absolute;
     top: 0;
@@ -97,35 +100,73 @@
     overflow: hidden;
     line-height: 0;
 }
-
 .about-curve svg {
     position: relative;
     display: block;
     width: calc(109% + 1.3px);
     height: 136px;
 }
-
 .about-curve .shape-fill {
     fill: var(--dark-green);
+}
+/* .about-head {
+    background-color: pink;
+} */
+.about-location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid var(--mid-grey); */
+    border-radius: 50%;
+}
+.map-pin {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border: 6px solid var(--dark-green);
+    border-radius: 50% 50% 50% 0;
+    rotate: -45deg;
+}
+.map-pin::before {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    height: 36px;
+    width: 36px;
+    background-color: var(--dark-green);
+    border-radius: 50%;
+}
+.location {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    /* font-weight: bold; */
 }
 
 /* projects page */
 .projects-outer {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-    background: url('./assets/background-squiggle.png');
-    background-size: cover;
-    background-position: top 115px left 0;
+    position: relative;
+    padding: 200px 100px 100px 100px;
+    color: var(--off-white);
 }
-.projects-focus {
-    margin: 10px auto;
-    padding: 10px;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 30px;
+.project-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 }
-.projects-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0;
+
+.project-curve svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 112px;
+}
+
+.project-curve .shape-fill {
+    fill: var(--mid-green);
 }

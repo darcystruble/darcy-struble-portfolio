@@ -22,17 +22,11 @@
     /* light colors */
     --off-white: #eadccc;
     --pale-pink: #edded2; 
-
-    /* --dark-green: #233349;
-    --pale-green: #9eafb6; */
-    /* --sec-color: #c4772a; */
 }
 body {
     margin: 0;
     padding: 0;
     color: var(--darkest-green);
-    /* background-color: #e7e8ec; */
-    /* background-color: var(--mid-green); */
     background-color: var(--dark-green);
 }
 html {
@@ -49,8 +43,6 @@ h1, h2, h3 {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* overflow: hidden; */
 }
 
 /* animations */

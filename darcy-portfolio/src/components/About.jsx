@@ -7,8 +7,13 @@ export default function About () {
                 </svg>
             </div>
             <div className="about-focus">
-                <div className="about-text-1">
-                    <h2>Something</h2>
+                <div className="about-head">
+                    <h1>A bit about me...</h1>
+                </div>
+                <div className="about-location">
+                    <h2>Location</h2>
+                    <div className="map-pin"></div>
+                    <div className="location">Duluth, GA</div>
                 </div>
                 <div className="about-text-2">
                     <h2>Something</h2>
