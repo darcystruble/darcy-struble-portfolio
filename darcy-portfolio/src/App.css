@@ -34,8 +34,11 @@
 
 
 /* top fold */
+.top-bg {
+    position: relative;
+}
 .top-info {
-    padding-top: 40px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -43,12 +46,13 @@
 .hero {
     position: relative;
     height: 370px;
+    width: 465px;
     padding: 20px 40px;
     border: 4px solid var(--black);
     border-bottom: none;
-    background-color: var(--yellow);
+    background-color: #ecf8b0;
 }
-.hero::before {
+.hero::after {
     position: absolute;
     content: url('./assets/darcy-standing2-no-bg.png');
     height: 100%;
@@ -77,6 +81,7 @@
 
     width: 80vw;
 }
+/* all containers holding quick info */
 .about-text {
     display: flex;
     flex-direction: column;
@@ -88,12 +93,35 @@
     background-color: var(--white);
     border: 2px solid var(--black);
     box-shadow: 8px 8px var(--worn-blue);
-    /* color: var(--periwinkle); */
-    /* border-radius: 50%; */
 }
 .about-text:hover {
     animation: twitch 1s;
 }
+/* languages */
+.language-pngs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 200px;
+    opacity: .7;
+    overflow: hidden;
+}
+.language-pngs img {
+    height: 50px;
+    /* max-width: 30px; */
+    padding: 5px;
+
+    position: relative;
+    /* animation: scroll 20s linear infinite; */
+}
+/* #first-img {
+    padding: 0 50px 0 0;
+} */
+/* #last-img {
+    padding: 0 0 0 50px;
+} */
+
+/* location */
 .map-pin {
     position: relative;
     height: 50px;
