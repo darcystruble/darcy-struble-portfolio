@@ -48,7 +48,7 @@ h1, h2, h3 {
 }
 
 .main {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -75,13 +75,15 @@ h1, h2, h3 {
 .btn:hover {
     box-shadow: 15px 15px var(--orange);
     background-color: #cdde75;
-    transition: all .2s ease;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
 }
 
 /* svg curves */
 .top-curve {
     position: absolute;
-    bottom: -2px;
+    bottom: 0px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -164,3 +166,47 @@ h1, h2, h3 {
     
 }
 
+@keyframes scroll {
+    0% {
+        transform: translateX(200px);
+    }
+    10% {
+        transform: translateX(-10px);
+    }
+    15% {
+        transform: translateX(-10px);
+    }
+    25% {
+        transform: translateX(-245px);
+    }
+    30% {
+        transform: translateX(-245px);
+    }
+    40% {
+        transform: translateX(-480px);
+    }
+    45% {
+        transform: translateX(-480px);
+    }
+    55% {
+        transform: translateX(-700px);
+    }
+    60% {
+        transform: translateX(-700px);
+    }
+    70% {
+        transform: translateX(-930px);
+    }
+    75% {
+        transform: translateX(-930px);
+    }
+    85% {
+        transform: translateX(-1160px);
+    }
+    90% {
+        transform: translateX(-1160px);
+    }
+    100% {
+        transform: translateX(-1400px);
+    }
+}
