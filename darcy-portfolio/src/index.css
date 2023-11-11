@@ -1,53 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
 * {
     /* box-sizing: border-box; */
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
 }
+
 :root {
     /* fonts */
-    --main-font: 'Poppins', sans-serif;
-    --accent-font: 'Lora', serif;
+    --main-font: 'Fira Sans', sans-serif;
+    --accent-font: 'Agbalumo', serif;
     /* color palette */
-    /* dark colors */
-    --darkest-green: #232d2a;
-    --dark-green: #394b45;
-    --dark-grey: #393939;
-    --dark-red: #3d1513;
-    --dark-orange: #893f04;
-    /* mid colors */
-    --mid-green: #7e8d85;
-    --mid-pink: #a0695c;
-    --mid-grey: #74655d;
-    --mid-tan: #c09e87;
     
     /* light colors */
-    --off-white: #eadccc;
-    --pale-pink: #edded2; 
+    --off-white: #f2f2f2;
+
+    /* modern colors */
+    --yellow: #e8fc87;
+    --purple: #edb4f8;
+    --periwinkle: #bbb4fe;
+    --orange: #feb985;
+    --white: #fffeec;
+    --black: #141414;
+    
+    /* funky feminine retro color */
+    --worn-blue: #7b97ad;
+    --light-blue: #c1d5e1;
+    --red: #fd726b;
 }
+/* uniform styling */
 body {
     margin: 0;
     padding: 0;
-    color: var(--darkest-green);
-    background-color: var(--dark-green);
+    color: var(--black);
+    background-color: var(--light-blue);
 }
 html {
     margin: 0;
     padding: 0;
 }
 h1, h2, h3 {
-    font-family: 'Lora', serif;
-    font-weight: 700;
-    font-style: italic;
+    font-family: var(--accent-font);
 }
+
+.bold {
+    font-weight: 700;
+}
+
 .main {
     height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
 }
+.title {
+    font-size: 2.5rem;
+}
+
+/* buttons */
+.btn-container {
+    margin-top: 70px;
+}
+.btn {
+    padding: 10px;
+    text-decoration: none;
+    font-family: var(--accent-font);
+    font-size: 2rem;
+    color: var(--black);
+
+    border: 3px solid var(--black);
+    background-color: var(--yellow);
+    box-shadow: 10px 10px var(--orange);
+}
+.btn:hover {
+    box-shadow: 15px 15px var(--orange);
+    background-color: #cdde75;
+    transition: all .2s ease;
+}
+
+/* svg curves */
+.top-curve {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.top-curve svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 58px;
+}
+
+.top-curve .shape-fill {
+    fill: var(--worn-blue);
+}
+.about-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.about-curve svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 58px;
+}
+
+.about-curve .shape-fill {
+    fill: var(--worn-blue);
+}
+
+.project-curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.project-curve svg {
+    position: relative;
+    display: block;
+    width: calc(144% + 1.3px);
+    height: 112px;
+}
+.project-curve .shape-fill {
+    fill: var(--light-blue);
+}
+
 
 /* animations */
-@keyframes parallax {
-    to {
-        transform: translateY(calc(var(--parallax-speed) * 10px));
+@keyframes twitch {
+    0% {
+        rotate: 0deg;
     }
+    10% {
+        rotate: 5deg;
+    }
+    
+    30% {
+        rotate: -5deg;
+    }
+    
+    50% {
+        rotate: 5deg;
+    }
+    
+    70% {
+        rotate: -5deg;
+    }
+    90% {
+        rotate: 5deg;
+    }
+    
 }
+
