@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 0 5px 0;
-    border-bottom: 4px solid var(--worn-blue);
+    border-bottom: 4px solid var(--dark-bg);
 }
 .darcy-link h1 {
     padding: 0;
@@ -38,36 +38,40 @@
     position: relative;
 }
 .top-info {
+    /* background-color: pink; */
+    background-image: url('./assets/mountains.jpg');
+    /* filter: grayscale(100%); */
+    background-size: cover;
+    background-position: 50% 50%;
     padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
+}
+.top-info::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 192, 203, 0.522);
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    z-index: 9;
 }
 .hero {
     position: relative;
     height: 370px;
     width: 465px;
     padding: 20px 40px;
-    border: 4px solid var(--black);
+    /* border: 4px solid var(--black); */
     border-bottom: none;
-    background-color: #ecf8b0;
-}
-.hero::after {
-    position: absolute;
-    content: url('./assets/darcy-standing2-no-bg.png');
-    height: 100%;
-    width: 100%;
-    top: -120px;
-    left: 103px;
-    scale: 15%;
-    z-index: 9;
+    /* background-color: #ecf8b0; */
+    z-index: 100;
 }
 
 /* about page */
 .about-outer {
     position: relative;
     padding: 100px 0;
-    border-top: 35px solid var(--worn-blue);
+    border-top: 35px solid var(--dark-bg);
 }
 
 .about-focus {
@@ -81,6 +85,22 @@
 
     width: 80vw;
 }
+.hobby-list {
+    margin-top: 0;
+    padding-left: 7px;
+    font-size: 1.3rem;
+    list-style: none;
+}
+.hobby-list li::before {
+    content: '';
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 2px;
+    width: 22px;
+    height: 22px;
+    background-image: url('./assets/arrow-dark.png');
+    background-size: contain;
+}
 /* all containers holding quick info */
 .about-text {
     display: flex;
@@ -92,7 +112,7 @@
     
     background-color: var(--white);
     border: 2px solid var(--black);
-    box-shadow: 8px 8px var(--worn-blue);
+    box-shadow: 8px 8px var(--dark-bg);
 }
 .about-text:hover {
     animation: twitch 1s;
@@ -155,7 +175,7 @@
     position: relative;
     padding: 150px 0;
 
-    background-color: var(--worn-blue);
+    background-color: var(--dark-bg);
 }
 .projects-text {
     display: flex;

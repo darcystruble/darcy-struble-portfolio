@@ -16,7 +16,7 @@ export default function About () {
             </div>
             <div className="about-focus">
                 <div className="about-head">
-                    <h1 className='title'>A bit about me...</h1>
+                    <h1 className='title'>At a glance...</h1>
                 </div>
                 <div className="about-info">
                     <div className="about-text">
@@ -30,14 +30,20 @@ export default function About () {
                             <img src={reactLogo} alt="react" id="last-img" />
                         </div>
                     </div>
-                    <div className="about-text">
-                        <h2>Something</h2>
-                    </div>
                     <div className="about-text about-location">
                         <h2>Location</h2>
                         <div className="map-pin"></div>
                         <div className="location">Duluth, GA</div>
                         <div>An Atlanta suburb</div>
+                    </div>
+                    <div className="about-text">
+                        <h2>Hobbies</h2>
+                        <ul className='hobby-list'>
+                            <li>Hiking</li>
+                            <li>Rock Climbing</li>
+                            <li>Knitting</li>
+                            <li>Quilting</li>
+                        </ul>
                     </div>
                 </div>
                 <div className="btn-container">

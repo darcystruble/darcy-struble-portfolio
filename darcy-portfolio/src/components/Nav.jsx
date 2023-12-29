@@ -11,6 +11,7 @@ export default function Nav () {
                 <Link to='/projects' className='link'>// Projects</Link>
                 <Link to='/resume' className='link'>// Resume</Link>
                 <Link to='/contact' className='link'>// Contact</Link>
+                <Link to='/' className='link'>// Home</Link>
             </div>
         </div>
     )
