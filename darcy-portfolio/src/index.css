@@ -12,10 +12,13 @@
     --accent-font: 'Agbalumo', serif;
     /* color palette */
     
-    /* light colors */
+    /* main colors */
+    --light-bg: #f2f2f2;
+    --dark-bg: #121212;
+
+    /* accent colors */
     --off-white: #f2f2f2;
 
-    /* modern colors */
     --yellow: #e8fc87;
     --purple: #edb4f8;
     --periwinkle: #bbb4fe;
@@ -23,9 +26,6 @@
     --white: #fffeec;
     --black: #141414;
     
-    /* funky feminine retro color */
-    --worn-blue: #7b97ad;
-    --light-blue: #c1d5e1;
     --red: #fd726b;
 }
 /* uniform styling */
@@ -33,7 +33,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--black);
-    background-color: var(--light-blue);
+    background-color: var(--light-bg);
 }
 html {
     margin: 0;
@@ -44,7 +44,9 @@ h1, h2, h3 {
 }
 
 .bold {
-    font-weight: 700;
+    /* font-weight: 700; */
+    font-family: var(--accent-font);
+    font-size: 1.3rem;
 }
 
 .main {
@@ -89,6 +91,7 @@ h1, h2, h3 {
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    z-index: 101;
 }
 
 .top-curve svg {
@@ -99,7 +102,7 @@ h1, h2, h3 {
 }
 
 .top-curve .shape-fill {
-    fill: var(--worn-blue);
+    fill: var(--dark-bg);
 }
 .about-curve {
     position: absolute;
@@ -118,7 +121,7 @@ h1, h2, h3 {
 }
 
 .about-curve .shape-fill {
-    fill: var(--worn-blue);
+    fill: var(--dark-bg);
 }
 
 .project-curve {
@@ -136,7 +139,7 @@ h1, h2, h3 {
     height: 112px;
 }
 .project-curve .shape-fill {
-    fill: var(--light-blue);
+    fill: var(--light-bg);
 }
 
 
