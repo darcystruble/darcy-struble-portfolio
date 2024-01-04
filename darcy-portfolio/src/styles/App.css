@@ -39,7 +39,7 @@
 }
 .top-info {
     /* background-color: pink; */
-    background-image: url('./assets/mountains.jpg');
+    background-image: url('../assets/mountains.jpg');
     /* filter: grayscale(100%); */
     background-size: cover;
     background-position: 50% 50%;
@@ -71,7 +71,7 @@
 .about-outer {
     position: relative;
     padding: 100px 0;
-    border-top: 35px solid var(--dark-bg);
+    /* border-top: 35px solid var(--dark-bg); */
 }
 
 .about-focus {
@@ -118,22 +118,21 @@
     animation: twitch 1s;
 }
 /* languages */
-.language-pngs {
+.lang-outer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 200px;
-    opacity: .7;
-    overflow: hidden;
+    background-color: var(--dark-bg);
 }
-.language-pngs img {
+.lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+.lang img {
     height: 50px;
-    /* max-width: 30px; */
-    padding: 5px;
-
-    position: relative;
-    /* animation: scroll 20s linear infinite; */
 }
+
 /* #first-img {
     padding: 0 50px 0 0;
 } */
