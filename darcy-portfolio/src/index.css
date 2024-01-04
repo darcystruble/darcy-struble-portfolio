@@ -1,38 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Fira+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
 * {
-    /* box-sizing: border-box; */
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 300;
+    font-family: system-ui, sans-serif;
 }
 
 :root {
     /* fonts */
-    --main-font: 'Fira Sans', sans-serif;
-    --accent-font: 'Agbalumo', serif;
+    --main-font: system-ui, sans-serif;
+    --accent-font: Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;
+
     /* color palette */
-    
     /* main colors */
-    --light-bg: #f2f2f2;
-    --dark-bg: #121212;
+    --light-bg: #202926;
+    --dark-bg: #101916;
 
     /* accent colors */
     --off-white: #f2f2f2;
-
     --yellow: #e8fc87;
     --purple: #edb4f8;
     --periwinkle: #bbb4fe;
     --orange: #feb985;
     --white: #fffeec;
     --black: #141414;
-    
-    --red: #fd726b;
 }
 /* uniform styling */
 body {
     margin: 0;
     padding: 0;
-    color: var(--black);
+    font-weight: 300;
+    color: var(--white);
     background-color: var(--light-bg);
 }
 html {
@@ -41,11 +35,13 @@ html {
 }
 h1, h2, h3 {
     font-family: var(--accent-font);
+    font-weight: 700;
 }
 
 .bold {
     /* font-weight: 700; */
     font-family: var(--accent-font);
+    font-weight: 700;
     font-size: 1.3rem;
 }
 
@@ -68,7 +64,7 @@ h1, h2, h3 {
     text-decoration: none;
     font-family: var(--accent-font);
     font-size: 2rem;
-    color: var(--black);
+    color: var(--white);
 
     border: 3px solid var(--black);
     background-color: var(--yellow);

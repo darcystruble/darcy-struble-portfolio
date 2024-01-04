@@ -6,7 +6,7 @@ export default function TopFold() {
                     <h1 className="title">Hi there!</h1>
                     <p>I'm <span className="bold">Darcy</span>, a software engineer from the Atlanta suburbs. </p>
                     <p>Here's some cool stuff about what I like about this stuff that I do.</p>
-                    <p>You can either find me behind a computer or out in the woods.</p>
+                    <p>You can either find me behind a computer, making a craft or out in the woods with my family.</p>
                     <p>Let's get in touch.</p>
                 </div>
             </div>
