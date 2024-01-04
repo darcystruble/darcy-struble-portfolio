@@ -18,34 +18,6 @@ export default function About () {
                 <div className="about-head">
                     <h1 className='title'>At a glance...</h1>
                 </div>
-                <div className="about-info">
-                    <div className="about-text">
-                        <h2>Languages</h2>
-                        <div className="language-pngs">
-                            <img src={jsLogo} alt="javascript" id="first-img" />
-                            <img src={cssLogo} alt="css" />
-                            <img src={htmlLogo} alt="html" />
-                            <img src={pythonLogo} alt="python" />
-                            <img src={mongoLogo} alt="mongoDB" />
-                            <img src={reactLogo} alt="react" id="last-img" />
-                        </div>
-                    </div>
-                    <div className="about-text about-location">
-                        <h2>Location</h2>
-                        <div className="map-pin"></div>
-                        <div className="location">Duluth, GA</div>
-                        <div>An Atlanta suburb</div>
-                    </div>
-                    <div className="about-text">
-                        <h2>Hobbies</h2>
-                        <ul className='hobby-list'>
-                            <li>Hiking</li>
-                            <li>Rock Climbing</li>
-                            <li>Knitting</li>
-                            <li>Quilting</li>
-                        </ul>
-                    </div>
-                </div>
                 <div className="btn-container">
                     <Link className="btn" to="/about">More About Me</Link>
                 </div>
