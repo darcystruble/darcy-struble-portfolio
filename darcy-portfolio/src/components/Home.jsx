@@ -1,15 +1,13 @@
-import TopFold from "./TopFold";
-import Languages from "./Languages";
-import About from "./About";
-import Projects from "./Projects";
+import Header from "./Header"
+import About from "./About"
+import Projects from "./Projects"
 
-export default function Home () {
+export default function Home() {
     return (
-        <div className="home-outer">
-            <TopFold />
-            <Languages />
+        <>
+            <Header />
             <About />
             <Projects />
-        </div>
+        </>
     )
 }
