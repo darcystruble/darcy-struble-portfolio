@@ -1,10 +1,10 @@
 import Container from "react-bootstrap/esm/Container"
 
-export default function About() {
+export default function Contact() {
     return (
-        <div className="bg-dark main-bg" id="about">
+        <div>
             <Container>
-                <h2>About</h2>
+                <h4>Contact</h4>
             </Container>
         </div>
     )
