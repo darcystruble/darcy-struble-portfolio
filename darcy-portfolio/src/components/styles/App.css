@@ -42,11 +42,32 @@
 }
 /* SECTIONS */
 .section {
-  padding: 20px 0;
+  padding: 40px 0;
 }
 /* HEADER */
 .header {
   /* padding: 20px 0; */
   /* background-color: green; */
   border-bottom: 30px solid salmon;
+}
+
+/* ABOUT */
+#about {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column;
+  align-items: center; */
+}
+.img-div img {
+  margin-left: -12px;
+  width: 200px;
+}
+.img-div {
+  border: 2px solid pink;
+  width: 180px; height: 180px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.text {
+  max-width: 400px;
 }
