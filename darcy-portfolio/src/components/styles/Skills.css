@@ -6,9 +6,12 @@
 }
 
 .icon {
-    padding: 0 20px;
+    padding: 10px 20px 0 20px;
+    border-radius: 20px;
 }
 
 .icon:hover {
-    color: red;
+    /* color: red; */
+    background-color: #004643;
+    box-shadow: 2px 2px 20px #004643ad;
 }
