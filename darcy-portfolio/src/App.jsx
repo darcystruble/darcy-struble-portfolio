@@ -3,7 +3,6 @@ import { useState } from 'react'
 // components
 import Nav from './components/elements/Nav'
 import Main from './components/Main'
-import Footer from './components/elements/Footer'
 // styles
 import './components/styles/App.css'
 
@@ -14,7 +13,6 @@ function App() {
     <div>
       <Nav />
       <Main />
-      <Footer />
     </div>
   )
 }

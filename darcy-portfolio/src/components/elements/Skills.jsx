@@ -17,29 +17,29 @@ import { DjangoPlain } from 'devicons-react'
 
 export default function Skills() {
     return (
-        <div id="skills">
+        <div id="skills" className='section section-bg'>
             <h2>Skills</h2>
             <div className="langs">
                 <h3>Languages</h3>
                 <div className="group">
                     <div className="icon">
-                        <JavascriptPlain color="linen" size="70"/>
+                        <JavascriptPlain color="gold" size="70"/>
                         <div>JavaScript</div>
                     </div>
                     <div className="icon">
-                        <PythonPlain color="oldlace" size="70"/>
+                        <PythonPlain color="gold" size="70"/>
                         <div>Python</div>
                     </div>
                     <div className="icon">
-                        <TypescriptPlain color="oldlace" size="70"/>
+                        <TypescriptPlain color="gold" size="70"/>
                         <div>TypeScript</div>
                     </div>
                     <div className="icon">
-                        <Css3PlainWordmark color="oldlace" size="70"/>
+                        <Css3PlainWordmark color="gold" size="70"/>
                         <div>CSS3</div>
                     </div>
                     <div className="icon">
-                        <Html5PlainWordmark color="oldlace" size="70"/>
+                        <Html5PlainWordmark color="gold" size="70"/>
                         <div>HTML5</div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@ export default function Skills() {
                         <div>React.js</div>
                     </div>
                     <div className="icon">
-                        <BootstrapPlain color="oldlace" size="70"/>
+                        <BootstrapPlain color="gold" size="70"/>
                         <div>Bootstrap</div>
                     </div>
                     <div className="icon">
