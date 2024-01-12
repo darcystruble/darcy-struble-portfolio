@@ -1,0 +1,10 @@
+/* Skills Styles */
+
+.group {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    padding: 0 20px;
+}
