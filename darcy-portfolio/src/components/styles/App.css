@@ -36,38 +36,42 @@
 .card {
   padding: 2em;
 }
-
-.read-the-docs {
-  color: #888;
-}
 /* SECTIONS */
 .section {
-  padding: 40px 0;
+  padding: 100px 0 40px 0;
 }
+.section-bg {
+  background-color: #0c1618;
+}
+
 /* HEADER */
 .header {
-  /* padding: 20px 0; */
-  /* background-color: green; */
-  border-bottom: 30px solid salmon;
+  min-height: 650px;
+  position: sticky; position: -webkit-sticky;
+  top: 0;
+  z-index: -1;
+  background-image: linear-gradient(180deg, #0c1618, #004643);
 }
 
 /* ABOUT */
 #about {
   display: flex;
   justify-content: center;
-  /* flex-direction: column;
-  align-items: center; */
+  /* flex-direction: column; */
+  align-items: center;
 }
 .img-div img {
   margin-left: -12px;
   width: 200px;
 }
 .img-div {
-  border: 2px solid pink;
+  margin: 0 20px;
+  /* border: 2px solid pink; */
   width: 180px; height: 180px;
   overflow: hidden;
   border-radius: 50%;
 }
 .text {
-  max-width: 400px;
+  margin: 0 20px;
+  max-width: 500px;
 }

@@ -1,0 +1,15 @@
+.project {
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.p-text-div {
+    border: 2px solid pink;
+}
+.p-img-div {
+    border: 2px solid yellow;
+}
+.p-img-div img {
+    width: 450px;
+}
