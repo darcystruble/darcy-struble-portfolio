@@ -1,15 +1,33 @@
 .project {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
 }
 .p-text-div {
-    border: 2px solid pink;
+    margin: 0 20px; padding: 0 15px 15px 15px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* border: 2px solid pink; */
+    background-color: #161e1f;
+    border-radius: 20px;
+    height: fit-content;
 }
 .p-img-div {
-    border: 2px solid yellow;
+    margin: 0 20px;
+    display: flex;
+    /* border: 2px solid yellow; */
+    border-radius: 20px;
+    overflow: hidden;
 }
 .p-img-div img {
     width: 450px;
+}
+
+.project a {
+    margin: 0 5px;
+    padding: 7px;
+    /* border: 1px solid yellow; */
+    border-radius: 12px;
+    background-color: #2f3030;
 }
