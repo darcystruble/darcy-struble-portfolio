@@ -7,7 +7,7 @@ import Contact from '../elements/Contact'
 
 export default function Home() {
     return (
-        <div>
+        <div className='home'>
             <Header />
             <Curve />
             <About />

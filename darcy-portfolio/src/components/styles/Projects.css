@@ -31,3 +31,8 @@
     border-radius: 12px;
     background-color: #2f3030;
 }
+@media screen and (max-width: 450px){
+    .project {
+        flex-direction: column;
+    }
+}
