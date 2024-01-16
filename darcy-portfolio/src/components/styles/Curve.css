@@ -19,3 +19,12 @@
   .curve .shape-fill {
     fill: #0c1618;
   }
+
+  @media screen and (max-width: 450px){
+    .curve svg {
+      height: 55px;
+    }
+    .curve {
+      bottom: -1px;
+    }
+  }
