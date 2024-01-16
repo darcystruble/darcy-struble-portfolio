@@ -20,7 +20,7 @@ export default function Projects() {
                 <div className="p-text-div"data-aos="fade-right" data-aos-duration="1000">
                     <h3>Big Adventures with Little Kids</h3>
                     <div className="sub-text">JavaScript // HTML // CSS</div>
-                    <p>Information about this project, just a quick line</p>
+                    <p>A website using JavaScript logic to sort through hikes available on the National Parks API that are kid and family friendly.</p>
                     <div className="links">
                         <a href="https://github.com/darcystruble/adventure-awaits" target="blank">GitHub</a>
                         <a href="https://bigadventureswithlittlekids.surge.sh/" target="blank">Deployed</a>
@@ -34,7 +34,7 @@ export default function Projects() {
                 <div className="p-text-div" data-aos="fade-right" data-aos-duration="1000">
                     <h3>Self Care App</h3>
                     <div className="sub-text">JavaScript // MongoDB // HTML // CSS</div>
-                    <p>Information about this project, just a quick line</p>
+                    <p>A website that combines frontend and backend to create a website where a user can track their moods and daily gratitudes.</p>
                     <div className="links">
                         <a href="https://github.com/darcystruble/self-care-app" target="blank">GitHub</a>
                         <a href="">Deployed</a>
@@ -55,7 +55,7 @@ export default function Projects() {
                 <div className="p-text-div" data-aos="fade-right" data-aos-duration="1000">
                     <h3>Crafted: A Fiber arts project tracker</h3>
                     <div className="sub-text">React // TypeScript // Django // Python</div>
-                    <p>Information about this project, just a quick line</p>
+                    <p>An app that allows a crafter to track their projects, get goals for how they want to spend their crafting time and track their crafting inventory.</p>
                     <div className="links">
                         <a href="https://github.com/darcystruble/fiber-arts-tracker" target="blank">GitHub</a>
                         <a href="">Deployed</a>

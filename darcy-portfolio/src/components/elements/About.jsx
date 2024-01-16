@@ -19,8 +19,8 @@ export default function About() {
                     <img src={darcyPic} alt="" />
                 </div>
                 <div className="text" data-aos="fade-left" data-aos-duration="2000">
-                    <p>I am a software engineer with a background in creative fields and design.</p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quo tempora nisi sunt saepe. Voluptatem soluta, deleniti dolorum quo, aliquid velit architecto unde aut optio nostrum, quos perspiciatis minima. Eveniet.</p>
+                    <p>I am a junior develper with a background in creative fields and design. Frontend work is my passion! I love creating beautfiul and functional websites using modern technologies.</p>
+                    <p>When I'm not behind my computer, you will find me out in the woods with my family, camping or hiking and sitting with my yarn and knitting up a project.</p>
                 </div>
             </div>
         </div>
